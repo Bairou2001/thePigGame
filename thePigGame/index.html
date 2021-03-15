@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>The Pig Game</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <header>🐽 Welcome to the Pig Game! 🐽</header>
+    <main>
+      <div id="player0" class="player playerActive">
+        <div class="playerName player1Name">Player 1</div>
+        <div class="totalScore">
+          <p>Total score:</p>
+          <div id="player0Score" class="playerTotalScore">0</div>
+        </div>
+        <div class="playerCurrent">
+          <p>Current Score</p>
+          <p id="currentScore0">0</p>
+        </div>
+      </div>
+      <div id="player1" class="player">
+        <div class="playerName player2Name">Player 2</div>
+        <div class="totalScore">
+          <p>Total score:</p>
+          <div id="player1Score" class="playerTotalScore">0</div>
+        </div>
+        <div class="playerCurrent">
+          <p>Current Score</p>
+          <p id="currentScore1">0</p>
+        </div>
+      </div>
+    </main>
+    <div id="buttons">
+      <div id="buttonRestart" class="button">Restart</div>
+      <div id="buttonDice"><img id="dice" src="images/dice-1.png" /></div>
+      <div id="buttonRoll" class="button">Roll Dice</div>
+      <div id="buttonSkip" class="button">Finish Turn</div>
+    </div>
+    <script src="script/script.js"></script>
+  </body>
+</html>

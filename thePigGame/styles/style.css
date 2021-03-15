@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+  /*background-image: url(/images/versusBackground.jpg);*/
+  background-size: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 500px;
+  min-height: 300px;
+}
+
+header {
+  font-size: larger;
+  margin-bottom: 10px;
+}
+.playerName {
+  font-size: larger;
+}
+
+main {
+  position: relative;
+  width: 90%;
+  height: 80%;
+  background-color: rgba(224, 153, 153, 0.35);
+  backdrop-filter: blur(200px);
+  filter: blur();
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.playerActive {
+  background-color: rgba(230, 220, 220, 0.35);
+}
+
+.playerName {
+  height: 10%;
+  width: 100%;
+  text-align: center;
+  color: rgb(49, 38, 38);
+  font-weight: bolder;
+}
+.totalScore {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.playerTotalScore {
+  font-size: x-large;
+}
+
+.totalScore > p {
+  margin: 5px;
+}
+
+.playerCurrent {
+  background-color: #a34262;
+  border-radius: 10px;
+  height: 30%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.playerCurrent > p {
+  font-size: smaller;
+  margin-bottom: 5%;
+}
+
+#currentScore0,
+#currentScore1 {
+  font-size: x-large;
+}
+
+#buttons {
+  position: absolute;
+  z-index: 2;
+  width: 20%;
+  height: 80%;
+  top: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  transition: all 0.2s;
+}
+
+#dice {
+  height: 3em;
+  border-radius: 10px;
+}
+
+.button {
+  background-color: rgba(248, 248, 248, 0.35);
+  border-radius: 30px;
+  cursor: pointer;
+  min-height: 30px;
+  min-width: 100px;
+  text-align: center;
+  margin-top: 2%;
+
+  background-color: rgb(240, 204, 204);
+  background-color: rgba(250, 232, 232, 0.6);
+  backdrop-filter: blur(20px);
+
+  padding: 6px 5px 4px 4px;
+  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+  color: rgb(19, 17, 17);
+}
+
+#buttonDice {
+  margin-bottom: 20%;
+  margin-top: 15%;
+}
+
+.button:active {
+  transform: translate(-1%, 1px);
+  box-shadow: 2 1rem 2rem rgba(3, 3, 3, 0.15);
+}
+
+.button:focus {
+  outline: none;
+}
+.button:hover {
+  min-height: 32px;
+  min-width: 105px;
+  color: rgb(78, 58, 58);
+  background-color: rgb(238, 215, 215);
+}
+
+.winner {
+  background-color: #cf9c2d;
+}
+
+.winner .playerName {
+  font-weight: 800;
+  color: #ffffff;
+}
