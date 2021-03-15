@@ -11,6 +11,7 @@ const buttonNew = document.querySelector("#buttonRestart");
 const buttonHold = document.querySelector("#buttonSkip");
 const player0 = document.querySelector("#player0");
 const player1 = document.querySelector("#player1");
+const buttonStart = document.querySelector("#start");
 
 // program definitions
 let currentPlayer, currentScore, total;
@@ -78,3 +79,7 @@ buttonHold.addEventListener("click", function () {
 });
 
 buttonNew.addEventListener("click", initialize);
+
+buttonStart.addEventListener("click", function () {
+  document.querySelector("#instructions").style.display = "none";
+});

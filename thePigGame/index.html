@@ -37,6 +37,26 @@
       <div id="buttonRoll" class="button">Roll Dice</div>
       <div id="buttonSkip" class="button">Finish Turn</div>
     </div>
+    <div id="instructions">
+      <h1>🐽 Welcome to the Pig Game! 🐽</h1>
+      <div id = "instructions-body" class = "hidden">
+      <p>
+        This is a single two-Player dice game that you can play with your
+        friend!
+      </p>
+      <p>
+        Every turn, a player will repeatedly rolls a dice until the player decides to "End turn" or the player rolls a 1.
+        <ul>
+          <li>If 1 is rolled, the current score reset to 0 and it becomes the other player's turn.</li>
+          <li>If another number is rolled, it is added to the player's current score and the player's turn continues.</li>
+          <li>If the player "End turn", their current score is added to their total score and it becomes the turn of the other player.</li>
+        </ul>
+        The first player to score 100 or higher wins!
+      </p>
+    </div>
+      <div id = "start">Start</div>
+
+    </div>
     <script src="script/script.js"></script>
   </body>
 </html>
