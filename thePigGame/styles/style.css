@@ -15,16 +15,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-width: 500px;
+  min-width: 780px;
   min-height: 330px;
-}
-
-header {
-  font-size: larger;
-  margin-bottom: 10px;
-}
-.playerName {
-  font-size: larger;
 }
 
 main {
@@ -62,16 +54,6 @@ main {
   color: rgb(49, 38, 38);
   font-weight: bolder;
 }
-.totalScore {
-  height: 40%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.playerTotalScore {
-  font-size: x-large;
-}
 
 .totalScore > p {
   margin: 5px;
@@ -90,11 +72,6 @@ main {
 .playerCurrent > p {
   font-size: smaller;
   margin-bottom: 5%;
-}
-
-#currentScore0,
-#currentScore1 {
-  font-size: x-large;
 }
 
 #buttons {
@@ -204,8 +181,6 @@ p {
   outline: none;
 }
 .button:hover {
-  min-height: 32px;
-  min-width: 105px;
   color: rgb(78, 58, 58);
   background-color: rgb(238, 215, 215);
 }
@@ -230,4 +205,87 @@ p {
 
 .hidden {
   display: none;
+}
+
+/* Media queries */
+
+@media only screen and (max-height: 500px), (max-width: 1000px) {
+  header {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  .playerName {
+    font-size: 2em;
+  }
+  .totalScore {
+    font-size: 2em;
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .playerTotalScore {
+    font-size: 1em;
+  }
+  #currentScore0,
+  #currentScore1 {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (min-height: 501px) and (min-width: 1000px) {
+  header {
+    font-size: 3em;
+    margin-bottom: 10px;
+  }
+  .playerName {
+    font-size: 3em;
+  }
+  .totalScore {
+    font-size: 3em;
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .playerTotalScore {
+    font-size: 1em;
+  }
+  .button {
+    min-height: 50px;
+    min-width: 150px;
+    height: 50%;
+    width: 50%;
+    padding-top: 10%;
+  }
+
+  #currentScore0,
+  #currentScore1 {
+    font-size: 2em;
+  }
+  .playerCurrent {
+    font-size: 1.3em;
+  }
+  #instructions > h1 {
+    height: 10%;
+    font-size: 2em;
+  }
+
+  #instructions-body {
+    height: 80%;
+    font-size: 1.2em;
+    line-height: 120%;
+  }
+  #start {
+    height: 10%;
+    border-radius: 10px;
+  }
+  ul {
+    margin: 10px;
+  }
+  li {
+    font-size: 70%;
+  }
 }
